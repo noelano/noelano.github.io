@@ -2,7 +2,7 @@
 <div class="sixteen columns" id="navigation">
     <div class="head">
         <h1>
-        <a href="{{ site.baseurl }}" class="nav">{{ site.title }}</a>
+        <a href="{{ "/" | prepend: site.baseurl }}" class="nav">{{ site.title }}</a>
         </h1>
     </div>
     {% for page in site.pages %} {% if page.title %}
