@@ -1,0 +1,11 @@
+<head>
+  <meta charset="UTF-8">
+	
+  <!--Needed for firefox and chrome on android mobiles-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" type="text/css">
+  
+</head>

@@ -1,0 +1,16 @@
+<div class="container" id="navcontainer" >
+<div class="sixteen columns" id="navigation">
+    <div class="head">
+        <h1>
+        <a href="{{ site.baseurl }}" class="nav">{{ site.title }}</a>
+        </h1>
+    </div>
+    {% for page in site.pages %} {% if page.title %}
+        <div class="navbar">
+            <a href="{{ page.url | prepend: site.baseurl }}" class="nav">{{ page.title }}</a>
+        </div>
+    {% endif %} {% endfor %}
+    <div class="navbar"><a href="{{ "/blog" | prepend: site.baseurl }}" class="nav">Blog</a></div>
+</div>
+</div>
+<hr/>

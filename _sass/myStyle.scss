@@ -22,7 +22,7 @@
  
 	h1, h2, h3, h4, h5, h6 {
 		color: #181818;
-		font-family: "Georgia", "Times New Roman", serif;
+		font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-weight: normal; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
@@ -35,7 +35,7 @@
 	p { margin: 0 0 20px 0; }
 	p img { margin: 0; }
 	
-	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 0 0 0; height: 0; }
 
 
 /*=======================================================================*/
@@ -52,10 +52,12 @@ dd{
 }
 
 #container {
-	background: -webkit-linear-gradient(#CCCCB2, white);
-	background: -o-linear-gradient(#CCCCB2, white);
-	background: -moz-linear-gradient(#CCCCB2, white);
-	background: linear-gradient(#CCCCB2, white);
+	background: -webkit-linear-gradient(#e7e7d9, white);
+	background: -o-linear-gradient(#e7e7d9, white);
+	background: -moz-linear-gradient(#e7e7d9, white);
+	background: linear-gradient(#e7e7d9, white);
+	min-height: 70vh;
+	padding-top: 20px;
 }
 
 #navcontainer {
@@ -136,7 +138,6 @@ a li img{
 	background: white;
 	color: gray;
 	display: inline;
-	margin-bottom: 15px;
 	font-size: 20px;
 }
 
@@ -153,6 +154,11 @@ a.nav, a.nav:visited{
 a.nav:visited:hover, a.nav:hover{
 	color: gray;
 	font-weight: bold;
+}
+
+#navbar{
+	bottom: 3px;
+	margin-top: 15px;
 }
 
 /* LISTS */
