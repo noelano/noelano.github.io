@@ -6,11 +6,11 @@
         </h1>
     </div>
     {% for page in site.pages %} {% if page.title %}
-        <div class="navbar">
-            <a href="{{ page.url | prepend: site.baseurl }}" class="nav">{{ page.title }}</a>
-        </div>
+        <a href="{{ page.url | prepend: site.baseurl }}" class="nav">
+            <div class="navbar">{{ page.title }}</div>
+        </a>
     {% endif %} {% endfor %}
-    <div class="navbar"><a href="{{ "/blog" | prepend: site.baseurl }}" class="nav">Blog</a></div>
+    <a href="{{ "/blog" | prepend: site.baseurl }}" class="nav"><div class="navbar">Blog</div></a>
 </div>
 </div>
 <hr/>
