@@ -15,7 +15,7 @@
 	body {
 		background: #fff;
 		font: 17px/23px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-		color: #444;
+		// color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
  }
@@ -26,7 +26,7 @@
 		font-weight: normal; }
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 	h1 { font-size: 46px; line-height: 50px; margin-bottom: 14px;}
-	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; }
+	h2 { font-size: 35px; line-height: 40px; margin-bottom: 10px; color: #406fbc; }
 	h3 { font-size: 28px; line-height: 34px; margin-bottom: 8px; text-align: center; }
 	h4 { font-size: 21px; line-height: 30px; margin-bottom: 4px; }
 	h5 { font-size: 17px; line-height: 24px; }
@@ -52,10 +52,10 @@ dd{
 }
 
 #container {
-	background: -webkit-linear-gradient(#e7e7d9, white);
-	background: -o-linear-gradient(#e7e7d9, white);
-	background: -moz-linear-gradient(#e7e7d9, white);
-	background: linear-gradient(#e7e7d9, white);
+	//background: -webkit-linear-gradient(#e7e7d9, white);
+	//background: -o-linear-gradient(#e7e7d9, white);
+	//background: -moz-linear-gradient(#e7e7d9, white);
+	//background: linear-gradient(#e7e7d9, white);
 	min-height: 70vh;
 	padding-top: 20px;
 }
