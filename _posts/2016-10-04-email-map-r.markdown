@@ -44,22 +44,22 @@ A python script obtains addresses from this file by querying
 Next step, start creating the map! First, we want to get a count on the occurrence of each location
 
 {% highlight r %}
-> counts <- count(locations)
+counts <- count(locations)
 
-> world <- map_data("world")
-> p <- ggplot()
-> p <- p + geom_polygon(data = world, aes(x=long, y=lat, group = group), color = "steelblue4", fill = "royalblue4") + 
+world <- map_data("world")
+p <- ggplot()
+p <- p + geom_polygon(data = world, aes(x=long, y=lat, group = group), color = "steelblue4", fill = "royalblue4") + 
 	theme(panel.background = element_rect(color = "midnightblue", fill = "midnightblue")) + theme(line = element_blank(), 
 	axis.title = element_blank(), axis.ticks = element_blank(), 
 	axis.text = element_blank())
 
-> p <- p + geom_point(data = counts, aes(x=Longitude, y=Latitude, size = freq), color = "red2")
+p <- p + geom_point(data = counts, aes(x=Longitude, y=Latitude, size = freq), color = "red2")
 {% endhighlight %}
 
 To zoom in on the relevant map location:
 
 {% highlight r %}
-> p <- p + coord_cartesian(xlim = c(-150, 50), ylim = c(-40, 80))
+p <- p + coord_cartesian(xlim = c(-150, 50), ylim = c(-40, 80))
 {% endhighlight %}
 
 To give an illustration of the paths, lines will be added from each location to the recipients (ie me) locations (Dublin)
@@ -73,6 +73,6 @@ for(i in 1:nrow(counts)){
 All that's left is to add the title and voila, the map is complete!
 
 {% highlight r %}
-> p <- p + annotate("text", label="Incoming Mails", x = -100, y = -30, color = "white", size = 8
+p <- p + annotate("text", label="Incoming Mails", x = -100, y = -30, color = "white", size = 8
 {% endhighlight %}
 ![R map](/images/map_v2.png)
