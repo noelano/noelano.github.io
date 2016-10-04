@@ -26,11 +26,11 @@
     .container .two-thirds.column               { width: 620px; }
 
 	/* OWN CODE */
-	.container .navbar		              { width: 180px; float: left; text-align: center;}
+	.container .navbar	                { width: 180px; float: left; text-align: center;}
 
-	.container .head		              { width: 360px; float: left; text-align: center;}
+	.container .head		        { width: 360px; float: left; text-align: center;}
 
-
+	.nav-menu                               {display:none;}
 
 /* #Tablet (Portrait)
 ================================================== */
@@ -48,8 +48,9 @@
         .container .two-thirds.column               { width: 492px; }
 		
 		/* OWN CODE */
-	.container .navbar		              { width: 133px; float: left; text-align: center;}
-	.container .head		              { width: 266px; float: left; text-align: center;}
+	.container .navbar		            { width: 133px; float: left; text-align: center;}
+	.container .head	                    { width: 300px; float: left; text-align: center;}
+	.nav-menu                                   { display: none; }
     }
 
 
@@ -68,8 +69,10 @@
         .container .two-thirds.column  { width: 300px; }
 		
 		/* OWN CODE */
-	.container .navbar		              { width: 60px; float: left; text-align: center;}
-	.container .head		              { width: 120px; float: left; text-align: center;}
+	.container .navbar		              { display: none; }
+	.container .head		              { width: 200px; float: left; text-align: center;}
+        .nav-options                                  { display: none; }
+	.nav-menu                                     { display: block; }
     }
 
 
@@ -89,7 +92,9 @@
 	
 		/* OWN CODE */
 	.container .navbar		              { width: 80px; float: left; text-align: center;} 
-	.container .head		              { width: 160px; float: left; text-align: center;}
+	.container .head		              { width: 320px; float: left; text-align: center;}
+	.nav-options                                  {display:none;}
+	.nav-menu                                     { display: block; }
  }
 
 

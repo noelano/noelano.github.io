@@ -5,12 +5,30 @@
         <a href="{{ "/" | prepend: site.baseurl }}" class="nav">{{ site.title }}</a>
         </h1>
     </div>
+    <div class="nav-options">
     {% for page in site.pages %} {% if page.title %}
         <a href="{{ page.url | prepend: site.baseurl }}" class="nav">
             <div class="navbar">{{ page.title }}</div>
         </a>
     {% endif %} {% endfor %}
     <a href="{{ "/blog" | prepend: site.baseurl }}" class="nav"><div class="navbar">Blog</div></a>
+    </div>
+
+    <div class="dropdown">
+        <div class="nav-menu">
+            <div class="box">
+            <div id="menu"></div>
+            <div id="menu"></div>
+            <div id="menu"></div>
+            </div>
+        </div>
+        <div class="dropdown-content">
+        {% for page in site.pages %} {% if page.title %}
+            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            {% endif %} {% endfor %}
+            <a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a>
+        </div>
+    </div>
 </div>
 </div>
 <hr/>
