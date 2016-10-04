@@ -31,6 +31,7 @@
 	.container .head		        { width: 360px; float: left; text-align: center;}
 
 	.nav-menu                               {display:none;}
+	#pic					{ margin-left: 20px; }
 
 /* #Tablet (Portrait)
 ================================================== */
@@ -51,6 +52,7 @@
 	.container .navbar		            { width: 133px; float: left; text-align: center;}
 	.container .head	                    { width: 300px; float: left; text-align: center;}
 	.nav-menu                                   { display: none; }
+	#pic					    { margin-left: 10px; }
     }
 
 
@@ -73,6 +75,8 @@
 	.container .head		              { width: 220px; float: left; text-align: center;}
         .nav-options                                  { display: none; }
 	.nav-menu                                     { display: block; }
+	.social-icons li			      { display: inline-block; }
+	#pic					      { margin: auto; text-align: center; }
     }
 
 
@@ -95,6 +99,8 @@
 	.container .head		              { width: 340px; float: left; text-align: center;}
 	.nav-options                                  {display:none;}
 	.nav-menu                                     { display: block; }
+	.social-icons li			      { display: inline-block; }
+	#pic					      { margin: auto; text-align: center; }
  }
 
 
