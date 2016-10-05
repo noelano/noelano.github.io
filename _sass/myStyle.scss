@@ -265,11 +265,54 @@ form p{
 }
 
 textarea{
-	height: 100px;
-	width: 200px;
+	height: 150px;
+	width: 250px;
 }
 
+/*===========================================*/
+/* IMAGE OVERLAYS */
 
+.image-overlay {
+    position: relative;
+}
+
+.image-overlay img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.image-overlay:hover:after, .image-overlay:hover:before {
+    opacity: 1;
+}
+
+.image-overlay:after, .image-overlay:before {
+    position:absolute;
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.image-overlay:after {
+    content:'\A';
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+}
+
+.image-overlay:before {
+    content: attr(data-content);
+    width:100%;
+    color:#fff;
+    z-index:1;
+    left: 0;
+    bottom: 10px;
+    padding:4px 10px;
+    text-align:center;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+
+/*===========================================*/
 /* MISC */
 
 h1{
