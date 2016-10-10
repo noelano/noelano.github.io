@@ -17,7 +17,13 @@ Your team has to conform to a 'realistic' formation, so having exclusively strik
 
 Finally, at the tail of the season there's no point buying the highest scoring player if he has performed poorly for the past few weeks. You want to get players who are on form so being able to see their recent performance is a definite plus.
 
-So, with all these requirements in place, lets get to the dashboard!
+So, with all these requirements in place, lets get started!
+
+### The Data
+
+Sadly, with the recent update this season to the fantasy website their api to player data is no longer available. When this dashboard was made it was possible to access the player resources via this [api][fantasy_api].
+This gave the full player data in json format, containing their bio along with stats for their performance each gameweek.
+A simple [python script][code] allowed me to extract the fields I wanted for every player and save into a csv file, ready for loading into Tableau.
 
 ### Points / Cost Ratio
 
@@ -61,3 +67,5 @@ Putting all the above into a single dashboard and linking together gives this ni
 ![Fantasy dashboard](/images/fantasy_total.png)
 
 [tableau]: //public.tableau.com/views/FantasyPremierleagueUpdated/FantasyPremierleague?:embed=y&:display_count=yes
+[fantasy_api]: //fantasy.premierleague.com/web/api/elements/100
+[code]: //github.com/noelano
