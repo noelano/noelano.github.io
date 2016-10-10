@@ -21,7 +21,7 @@ So, with all these requirements in place, lets get started!
 
 ### The Data
 
-Sadly, with the recent update this season to the fantasy website their api to player data is no longer available. When this dashboard was made it was possible to access the player resources via this [api][fantasy_api].
+Sadly, with the recent update this season to the fantasy website their api accessing player data is no longer available. When this dashboard was made it was possible to access the player resources via this [api][fantasy_api].
 This gave the full player data in json format, containing their bio along with stats for their performance each gameweek.
 A simple [python script][code] allowed me to extract the fields I wanted for every player and save into a csv file, ready for loading into Tableau.
 
